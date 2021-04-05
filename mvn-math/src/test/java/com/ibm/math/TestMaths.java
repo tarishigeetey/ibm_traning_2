@@ -1,6 +1,7 @@
 package com.ibm.math;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -39,5 +40,9 @@ public class TestMaths {
 	public void testSquare() {
 		assertEquals(25, maths.square(5));
 	}
-
+	
+	@Test
+	public void testIncorrectSquare() {
+		assertNotEquals(10, maths.square(3));
+	}
 }
