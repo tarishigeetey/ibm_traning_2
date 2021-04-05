@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileReaderDemo {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		String path = "D:\\Demo\\demo.txt";
 		BufferedReader reader = null;
 		String line = null;
