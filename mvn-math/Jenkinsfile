@@ -1,3 +1,27 @@
 pipeline{
-
+    agent any 
+    stages{
+       stage('Check Stage'){
+          steps {
+          withMaven(maven : 'Maven'){
+              bat 'mvn --version'
+                }
+             }
+           }
+           stage('compile Stage'){
+          steps {
+          withMaven(maven : 'Maven'){
+              bat 'mvn -f mvn-math/pom.xml clean compile'
+                }
+             }
+           }
+           
+           stage('Test Stage'){
+          steps {
+          withMaven(maven : 'Maven'){
+              bat 'mvn -f mvn-math/pom.xml test'
+                }
+             }
+           }
+     }
 }
