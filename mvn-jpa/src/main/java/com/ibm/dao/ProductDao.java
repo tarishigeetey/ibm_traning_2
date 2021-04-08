@@ -5,40 +5,39 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import com.ibm.entity.Album;
+import com.ibm.entity.Product;
 
-public class AlbumDao {
+public class ProductDao {
+
+	EntityManagerFactory factory;
 	
-	private EntityManagerFactory factory;
-	
-	public AlbumDao() {
+	public ProductDao() {
 		factory = Persistence.createEntityManagerFactory("MyJPA");
+		
 	}
 	
-	public int saveAlbum(Album a) {
-		
+	public int addProduct(Product p) {
 		EntityManager  em = factory.createEntityManager();
 		EntityTransaction txn = em.getTransaction();
 		txn.begin();
-		em.persist(a);
+		em.persist(p);
 		txn.commit();
 		em.close();
-		return a.getAlbumId();
+		return p.getPid();
 	}
-	
-	public Album findAlbum(int id) {
+	public Product findProduct(int id) {
 		EntityManager em = factory.createEntityManager();
-		Album a = em.find(Album.class, id);
-		return a;
+		Product p = em.find(Product.class, id);
+		return p;
 		}
 	
-	public Album updateAlbum(Album a) {
+	public Product udateProduct(Product p) {
 		EntityManager em = factory.createEntityManager();
 		EntityTransaction txn = em.getTransaction();
 		txn.begin();
-		em.merge(a);
+		em.merge(p);
 		txn.commit();
 		em.close();
-		return a;
+		return p;
 	}
 }

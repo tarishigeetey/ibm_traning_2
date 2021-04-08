@@ -12,6 +12,7 @@ import javax.persistence.Table;
 @Table(name = "music_album") 
 public class Album {
 	
+	
 	@Id                        //  Another name for Table
 	@GeneratedValue            // Autogen val
 	@Column(name = "album_id") // Pk
@@ -47,5 +48,10 @@ public class Album {
 	public void setRating(double rating) {
 		this.rating = rating;
 	}
+	@Override
+	public String toString() {
+		return "Album [albumId=" + albumId + ", title=" + title + ", gener=" + gener + ", rating=" + rating + "]";
+	}
+	
 	
 }
