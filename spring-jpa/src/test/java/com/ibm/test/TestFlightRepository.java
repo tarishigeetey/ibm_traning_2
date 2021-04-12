@@ -25,14 +25,14 @@ public class TestFlightRepository {
 	
 	@Test
 	public void testSave() {
-		Flight f = new Flight("100000AB", "Golu", "Dholakpur", "Kingfisher");
+		Flight f = new Flight("1234WE", "Golu", "Dholakpur", "Kingfisher");
 		assertNotNull(rep.save(f));
 		System.out.println(f);
 	}
 	
 	@Test
 	public void testFetch() {
-		Flight f = rep.fetch("100000AB");
+		Flight f = rep.fetch("1234WE");
 		assertNotNull(f);
 		System.out.println(f);
 	}
@@ -46,16 +46,9 @@ public class TestFlightRepository {
 	
 	@Test
 	public void testUpdate() {
-		Flight f = new Flight("100000AB", "Hogwards", "Bhopal", "Jet Airs");
+		Flight f = new Flight("1234WE", "Hogwards", "Bhopal", "Jet Airs");
 		assertTrue(rep.update(f));
 	}
-	
-	@Test
-	public void testRemove() {
-		assertTrue(rep.remove("12345RJ"));
-	}
-	
-	
 	
 	@Test
 	public void testFindByCarrier() {
@@ -63,5 +56,14 @@ public class TestFlightRepository {
 		assertNotNull(f);
 		f.forEach(System.out::println);
 	}
+	
+	@Test
+	public void testRemove() {
+		assertTrue(rep.remove("1234WE"));
+	}
+	
+	
+	
+	
 
 }
