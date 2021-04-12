@@ -1,7 +1,7 @@
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\repo\FlightRepository.java
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\repo\TicketRepository.java
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\entity\Flight.java
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\entity\Passenger.java
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\entity\Ticket.java
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\repo\TicketRepositoryImpl.java
-D:\CodeTraning_JavaFSD\Spring\spring-jpa\src\main\java\com\ibm\repo\FlightRepositoryImpl.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\entity\Flight.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\repo\TicketRepositoryImpl.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\entity\Passenger.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\repo\FlightRepository.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\repo\FlightRepositoryImpl.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\entity\Ticket.java
+C:\Users\ibmjavafsdmr19\Desktop\ibm_git_2\spring-jpa\src\main\java\com\ibm\repo\TicketRepository.java
