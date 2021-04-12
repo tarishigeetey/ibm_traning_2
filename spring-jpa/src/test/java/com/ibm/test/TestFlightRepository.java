@@ -25,14 +25,14 @@ public class TestFlightRepository {
 	
 	@Test
 	public void testSave() {
-		Flight f = new Flight("456778", "Rann", "Dholakpur", "Kingfisher");
+		Flight f = new Flight("100000AB", "Golu", "Dholakpur", "Kingfisher");
 		assertNotNull(rep.save(f));
 		System.out.println(f);
 	}
 	
 	@Test
 	public void testFetch() {
-		Flight f = rep.fetch("12345RJ");
+		Flight f = rep.fetch("100000AB");
 		assertNotNull(f);
 		System.out.println(f);
 	}
@@ -46,7 +46,7 @@ public class TestFlightRepository {
 	
 	@Test
 	public void testUpdate() {
-		Flight f = new Flight("12345RJ", "Hogwards", "Bhopal", "Jet Airs");
+		Flight f = new Flight("100000AB", "Hogwards", "Bhopal", "Jet Airs");
 		assertTrue(rep.update(f));
 	}
 	
